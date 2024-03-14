@@ -1,15 +1,15 @@
-# Carry-Lookahead Adder
+# [Carry-Lookahead Adder](./CLA16.pdf)
 
 The **Carry-Lookahead Adder (CLA) 16-bits Adder** is a type of digital circuit that improves upon the performance of a standard ripple-carry adder by reducing the propagation delay caused by carry bits.
 
-## Full Adder
+## [Full Adder](https://en.wikipedia.org/wiki/Adder_(electronics)#Full_adder)
 
 A full adder is the building block of a CLA, which performs the addition of three bits: two significant bits and one carry-in bit (`Cin`). It produces a sum bit and a carry-out bit (`Cout`), where:
 
 - **Sum** = `A XOR B XOR Cin`
 - **Cout** = `(A AND B) OR (B AND Cin) OR (A AND Cin)`
 
-### CLA4
+### [CLA4](https://en.wikipedia.org/wiki/Lookahead_carry_unit)
 
 A 4-bit CLA uses full adders by generating and propagating carry bits without waiting for carry-out from the previous stage. This is achieved by introducing two signals for each bit position:
 
@@ -18,9 +18,9 @@ A 4-bit CLA uses full adders by generating and propagating carry bits without wa
 
 The carry bits are calculated using these signals, which allows the CLA to determine carry bits in parallel.
 
-### CLA16
+### [CLA16](https://en.wikipedia.org/wiki/Lookahead_carry_unit)
 
-For the 16-bit CLA, four 4-bit CLA blocks are interconnected, each block responsible for a group of 4 bits. The CLA16 extends the concept of carry generation and propagation across 16 bits, making it suitable for larger binary numbers.
+For the **16-bit CLA**, **four 4-bit CLA blocks** are interconnected, each block responsible for a group of 4 bits. The CLA16 extends the concept of carry generation and propagation across 16 bits, making it suitable for larger binary numbers.
 
 ### Signals for 16-bit CLA
 
