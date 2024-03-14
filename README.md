@@ -6,15 +6,15 @@ The **Carry-Lookahead Adder (CLA) 16-bits Adder** is a type of digital circuit t
 
 A full adder is the building block of a CLA, which performs the addition of three bits: two significant bits and one carry-in bit (`Cin`). It produces a sum bit and a carry-out bit (`Cout`), where:
 
-- **\(Sum \)** $=$ \( A \oplus B \oplus \text{Cin} \)
-- **\(Cout\)** $=$ \( (A \land B) \lor (B \land \text{Cin}) \lor (A \land \text{Cin}) \)
+- $ Sum = A \oplus B \oplus \text{Cin}$
+- $ Cout = (A \land B) \lor (B \land \text{Cin}) \lor (A \land \text{Cin})$
 
 ### [CLA4](https://en.wikipedia.org/wiki/Lookahead_carry_unit)
 
 A 4-bit CLA uses full adders by generating and propagating carry bits without waiting for carry-out from the previous stage. This is achieved by introducing two signals for each bit position:
 
-- **G (Generate)**: Indicates if a carry bit will be generated.
-- **P (Propagate)**: Indicates if a carry bit will be propagated.
+- **$G$ (Generate)**: Indicates if a carry bit will be generated.
+- **$P$ (Propagate)**: Indicates if a carry bit will be propagated.
 
 The carry bits are calculated using these signals, which allows the CLA to determine carry bits in parallel.
 
@@ -24,12 +24,12 @@ For the **16-bit CLA**, **four 4-bit CLA blocks** are interconnected, each block
 
 ### Signals for 16-bit CLA
 
-The key signals `Gi` and `Pi` are used for the ith group of bits, where:
+The key signals $G_i$ and $P_i$ are used for the ith group of bits, where:
 
-- **Gi**: True if the ith group generates a carry.
-- **Pi**: True if the ith group can propagate a carry.
+- **$G_i$**: True if the ith group generates a carry.
+- **$P_i$**: True if the ith group can propagate a carry.
 
-These signals allow the calculation of the carry bits (`Ci+1`) for each group using logical equations.
+These signals allow the calculation of the carry bits ($C_{i+1}$) for each group using logical equations.
 
 ## Advantages of CLA
 
