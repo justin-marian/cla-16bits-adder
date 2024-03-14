@@ -6,7 +6,7 @@
 #include <ap_int.h>
 
 /**
- * @brief Wrapper function to calculate the 16-bit sum and carry-out.
+ * @brief Calculate the 16-bit sum and carry-out.
  * Serves as the top-level function for the HLS synthesis, clean interface for the adder.
  *
  * @param a     First 16-bit operand.
