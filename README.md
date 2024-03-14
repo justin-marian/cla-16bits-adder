@@ -6,8 +6,8 @@ The **Carry-Lookahead Adder (CLA) 16-bits Adder** is a type of digital circuit t
 
 A full adder is the building block of a CLA, which performs the addition of three bits: two significant bits and one carry-in bit (`Cin`). It produces a sum bit and a carry-out bit (`Cout`), where:
 
-- $ Sum = A \oplus B \oplus \text{Cin}$
-- $ Cout = (A \land B) \lor (B \land \text{Cin}) \lor (A \land \text{Cin})$
+- $ Sum = A \oplus B \oplus C_{in}$
+- $ Cout = (A \land B) \lor (B \land C_{in}) \lor (A \land C_{in})$
 
 ### [CLA4](https://en.wikipedia.org/wiki/Lookahead_carry_unit)
 
