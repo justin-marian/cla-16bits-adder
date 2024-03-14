@@ -53,7 +53,3 @@ The CLA circuit is tested using various input cases to ensure its correct operat
 - **cin**: Input carry bit (carry-in).
 - **sum**: Output port for the result of addition.
 - **cout**: Output carry bit (carry-out).
-
-**Synthesis and Performance Metrics:**
-
-The synthesis of the CLA circuit uses FPGA resources such as LUTs and Flip-Flops to achieve the desired functionality and performance.
